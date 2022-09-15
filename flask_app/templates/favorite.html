@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <title>Favorite</title>
+</head>
+<body background="{{ url_for('static', filename='image/space.jpg') }}">
+    <header class=" nav d-flex justify-content-evenly align-items-center mx-auto">
+        <img src="{{ url_for('static', filename='image/logo.png') }}" class="image-all">
+        <h3 class="title">Welcome {{user.first_name}}</h3>
+        <a href="/wall" class="enlace">wall</a>
+        <a href="/profile" class="enlace">Profile</a>
+        <a href="/findout" class="enlace">Find out</a>
+        <a href="/logout" class="enlace">logout</a>
+        <script src="{{url_for('static',filename = 'script/script.js')}}"></script>
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+            }
+        </script>
+    </header>
+    <div class="cajita">
+        <div class="row contenido">
+            <div class="col-7 mx-auto">
+                {%for i in favorite%}
+                    <div class="d-flex column post justify-content-evenly">
+                        <img src="{{ url_for('static', filename='image/user.png') }}" class="avatar_publicacion">
+                        <div class="usuario_2">
+                            <h5>
+                                <a href="/profile/{{i.user_id}}">{{i.first_name}}  {{i.last_name}}</a>
+                                | {{i.kind_of_user}} 
+                            </h5> 
+                            <p>{{i.created_at}}</p>
+                            <p class="usuario cont">{{i.content}}</p>
+                            <div class="d-flex column bot">
+                                <a class="botones" href="/delete/favorite/{{i.post_id}}">Delete</a>
+                            </div>
+                                <div class="d-flex column justify-content-evenly ">
+                                    <form action="/likes" method="POST">
+                                        <div class="form-group">
+                                        <input type="hidden" value={{i.id}} name="post_id" class="input">
+                                        </div>
+                                        <div>
+                                            {%for j in likes%}
+                                            {%if j.post_id == i.post_id%}
+                                            <label id="label" for="likes">{{j.likes}}</label>
+                                            {%endif%}
+                                            {%endfor%}
+                                            <input type="submit" class="btn-3" value=" Like" id="likes" onclick="click(this)">
+                                        </div>
+                                        
+                                    </form>
+                                    <form action="/favorite" method="POST">
+                                        <div class="d-flex justify-content-around">
+                                            <div class="form-group">
+                                                <input type="hidden" value={{i.id}} name="post_id" class="input">
+                                            </div>
+                                            <input type="submit" class="btn-3" value="Favorite">
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                        </div>
+                </div>
+                {%endfor%}
+            </div>
+            </div>
+            <a href="/wall" class="btn-2">Home</a>
+        </div>
+    </div>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

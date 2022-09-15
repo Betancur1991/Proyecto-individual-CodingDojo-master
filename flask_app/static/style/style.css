@@ -1,0 +1,257 @@
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+.botones{
+    margin-left: 20px;
+}
+.bot{
+    margin-left: 350px;
+}
+.cont{
+    background-color: #c8c8c8;
+    padding: 10px;
+    border-radius: 5px;
+}
+.post{
+    margin-top: 30px;
+    border: 1px gray solid;
+    border: 5%;
+    padding: 15px;
+    padding-left: 25px;
+    text-align: center;
+    border-radius: 20px;
+}
+.avatar_publicacion{
+    height: 40px;
+    width: 50px;
+}
+.contenido_2{
+    margin-top: 30px;
+}
+.usuario{
+    text-align: center;
+}
+.usuario_2{
+    text-align: left;
+}
+.esapcio{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.usuario{
+    text-align: center;
+}
+.nav{
+    width: 1100px;
+}
+.enlace{
+    text-decoration: none;
+}
+
+.cajita{
+    padding: 25px;
+    background-color: white;
+    width: 1350px;
+    height: auto;
+    margin-left: 90px;
+    border-radius: 20px;
+}
+
+.cajita-2{
+    padding: 25px;
+    background-color: white;
+    width: auto;
+    height: auto;
+    margin-left: 90px;
+    border-radius: 20px;
+}
+
+.centro{
+    text-align: center;
+}
+.page{
+    text-align: center;
+}
+.contenido{
+    margin-top: 20px;
+}
+.title{
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+}
+.container{
+    width: 420px;
+    display: flex;
+    justify-content: space-between;
+}
+.container-1{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-left: 550px;
+}
+
+.cont-img{
+    width: 760px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 450px;
+    padding-right: 330px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.imagen{
+    height: 350px;
+    width: 450px;
+}
+
+.image-all{
+    height: 100px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.image-all-avatar{
+    height: 135px;
+    width: 160px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #e7e7e7; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.btn {
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+.btn:hover {
+    background-color: black; 
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(238, 232, 232, 0.979), 0 17px 50px 0 rgba(238, 232, 232, 0.8);
+}
+
+.btn-2 {
+    background-color:black; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.btn-2 {
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+.btn-2:hover {
+    background-color: white; 
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(10, 10, 10, 0.979), 0 17px 50px 0 rgba(10, 10, 10, 0.8);
+}
+
+.enlace {
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 10%;
+}
+
+.enlace {
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+.enlace:hover {
+    color: white;
+    box-shadow: 0 12px 16px 0  rgba(238, 232, 232, 0.979), 0 17px 50px 0 rgba(238, 232, 232, 0.8);
+}
+
+.user-card{
+    width: 350px;
+    background-color: white;
+    border: 3px solid gray;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.btn-3 {
+    background-color:white; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+
+}
+
+.input{
+    width: 5px;
+    height: 5px;
+    margin-left: 50px;
+}
+.nasa{
+    margin-left: 110px;
+}
+
+.dec{
+    width: 700px;
+    height: auto;
+}
+.links{
+    margin-top: 20px;
+}
+
+.img{
+    width: 245px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#formsign{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.daniel{
+    width: 100vh;
+    height: 50vh;
+    margin: auto;
+}
+
+#tam1, #tam2 , #tam3{
+    margin: auto;
+    width: 65%;
+    display: block;
+}
